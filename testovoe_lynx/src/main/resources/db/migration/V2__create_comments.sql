@@ -10,3 +10,4 @@ CREATE TABLE comments (
 
 CREATE INDEX idx_comments_post_status ON comments(post_id, status);
 CREATE INDEX idx_comments_parent ON comments(parent_comment_id);
+CREATE INDEX idx_comments_approved ON comments(id, status);
